@@ -18,6 +18,7 @@
 		CAB3AED32CB3952800606F02 /* BillionerAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB3AED22CB3952800606F02 /* BillionerAppUITestsLaunchTests.swift */; };
 		CAB3AEE02CB3964200606F02 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB3AEDF2CB3964200606F02 /* Auth.storyboard */; };
 		CAB3AEE62CB3A1A000606F02 /* GetStartedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB3AEE52CB3A1A000606F02 /* GetStartedController.swift */; };
+		CAB3AEEA2CB4E3D500606F02 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB3AEE92CB4E3D500606F02 /* RegisterController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		CAB3AED22CB3952800606F02 /* BillionerAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillionerAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CAB3AEDF2CB3964200606F02 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		CAB3AEE52CB3A1A000606F02 /* GetStartedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedController.swift; sourceTree = "<group>"; };
+		CAB3AEE92CB4E3D500606F02 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +134,8 @@
 		CAB3AEE12CB3965A00606F02 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				CAB3AEDF2CB3964200606F02 /* Auth.storyboard */,
-				CAB3AEE52CB3A1A000606F02 /* GetStartedController.swift */,
+				CAB3AEE72CB4E36E00606F02 /* Storyboard */,
+				CAB3AEE82CB4E37F00606F02 /* Controllers */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -163,6 +165,23 @@
 				CAB3AEBA2CB3952700606F02 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CAB3AEE72CB4E36E00606F02 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CAB3AEDF2CB3964200606F02 /* Auth.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		CAB3AEE82CB4E37F00606F02 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CAB3AEE52CB3A1A000606F02 /* GetStartedController.swift */,
+				CAB3AEE92CB4E3D500606F02 /* RegisterController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAB3AEEA2CB4E3D500606F02 /* RegisterController.swift in Sources */,
 				CAB3AEE62CB3A1A000606F02 /* GetStartedController.swift in Sources */,
 				CAB3AEB42CB3952600606F02 /* MainViewController.swift in Sources */,
 				CAB3AEB02CB3952600606F02 /* AppDelegate.swift in Sources */,
