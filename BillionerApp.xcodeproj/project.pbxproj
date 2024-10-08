@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		CAB3AEB02CB3952600606F02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB3AEAF2CB3952600606F02 /* AppDelegate.swift */; };
 		CAB3AEB22CB3952600606F02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB3AEB12CB3952600606F02 /* SceneDelegate.swift */; };
-		CAB3AEB42CB3952600606F02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB3AEB32CB3952600606F02 /* ViewController.swift */; };
+		CAB3AEB42CB3952600606F02 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB3AEB32CB3952600606F02 /* MainViewController.swift */; };
 		CAB3AEB72CB3952600606F02 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CAB3AEB62CB3952600606F02 /* Base */; };
 		CAB3AEB92CB3952700606F02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB3AEB82CB3952700606F02 /* Assets.xcassets */; };
 		CAB3AEBC2CB3952700606F02 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CAB3AEBB2CB3952700606F02 /* Base */; };
 		CAB3AEC72CB3952800606F02 /* BillionerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB3AEC62CB3952800606F02 /* BillionerAppTests.swift */; };
 		CAB3AED12CB3952800606F02 /* BillionerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB3AED02CB3952800606F02 /* BillionerAppUITests.swift */; };
 		CAB3AED32CB3952800606F02 /* BillionerAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB3AED22CB3952800606F02 /* BillionerAppUITestsLaunchTests.swift */; };
+		CAB3AEE02CB3964200606F02 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB3AEDF2CB3964200606F02 /* Auth.storyboard */; };
+		CAB3AEE62CB3A1A000606F02 /* GetStartedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB3AEE52CB3A1A000606F02 /* GetStartedController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 		CAB3AEAC2CB3952600606F02 /* BillionerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillionerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB3AEAF2CB3952600606F02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAB3AEB12CB3952600606F02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CAB3AEB32CB3952600606F02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CAB3AEB32CB3952600606F02 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CAB3AEB62CB3952600606F02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAB3AEB82CB3952700606F02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAB3AEBB2CB3952700606F02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		CAB3AECC2CB3952800606F02 /* BillionerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillionerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB3AED02CB3952800606F02 /* BillionerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillionerAppUITests.swift; sourceTree = "<group>"; };
 		CAB3AED22CB3952800606F02 /* BillionerAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillionerAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CAB3AEDF2CB3964200606F02 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		CAB3AEE52CB3A1A000606F02 /* GetStartedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +103,11 @@
 		CAB3AEAE2CB3952600606F02 /* BillionerApp */ = {
 			isa = PBXGroup;
 			children = (
-				CAB3AEAF2CB3952600606F02 /* AppDelegate.swift */,
-				CAB3AEB12CB3952600606F02 /* SceneDelegate.swift */,
-				CAB3AEB32CB3952600606F02 /* ViewController.swift */,
-				CAB3AEB52CB3952600606F02 /* Main.storyboard */,
-				CAB3AEB82CB3952700606F02 /* Assets.xcassets */,
-				CAB3AEBA2CB3952700606F02 /* LaunchScreen.storyboard */,
 				CAB3AEBD2CB3952700606F02 /* Info.plist */,
+				CAB3AEE32CB3968200606F02 /* App */,
+				CAB3AEE22CB3966400606F02 /* Main */,
+				CAB3AEE12CB3965A00606F02 /* Auth */,
+				CAB3AEE42CB39A1400606F02 /* Resources */,
 			);
 			path = BillionerApp;
 			sourceTree = "<group>";
@@ -125,6 +127,42 @@
 				CAB3AED22CB3952800606F02 /* BillionerAppUITestsLaunchTests.swift */,
 			);
 			path = BillionerAppUITests;
+			sourceTree = "<group>";
+		};
+		CAB3AEE12CB3965A00606F02 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				CAB3AEDF2CB3964200606F02 /* Auth.storyboard */,
+				CAB3AEE52CB3A1A000606F02 /* GetStartedController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		CAB3AEE22CB3966400606F02 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CAB3AEB32CB3952600606F02 /* MainViewController.swift */,
+				CAB3AEB52CB3952600606F02 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CAB3AEE32CB3968200606F02 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CAB3AEAF2CB3952600606F02 /* AppDelegate.swift */,
+				CAB3AEB12CB3952600606F02 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CAB3AEE42CB39A1400606F02 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CAB3AEB82CB3952700606F02 /* Assets.xcassets */,
+				CAB3AEBA2CB3952700606F02 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAB3AEE02CB3964200606F02 /* Auth.storyboard in Resources */,
 				CAB3AEB92CB3952700606F02 /* Assets.xcassets in Resources */,
 				CAB3AEBC2CB3952700606F02 /* Base in Resources */,
 				CAB3AEB72CB3952600606F02 /* Base in Resources */,
@@ -258,7 +297,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAB3AEB42CB3952600606F02 /* ViewController.swift in Sources */,
+				CAB3AEE62CB3A1A000606F02 /* GetStartedController.swift in Sources */,
+				CAB3AEB42CB3952600606F02 /* MainViewController.swift in Sources */,
 				CAB3AEB02CB3952600606F02 /* AppDelegate.swift in Sources */,
 				CAB3AEB22CB3952600606F02 /* SceneDelegate.swift in Sources */,
 			);
