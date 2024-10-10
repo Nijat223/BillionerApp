@@ -19,6 +19,8 @@
 		CAB3AEE02CB3964200606F02 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB3AEDF2CB3964200606F02 /* Auth.storyboard */; };
 		CAB3AEE62CB3A1A000606F02 /* GetStartedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB3AEE52CB3A1A000606F02 /* GetStartedController.swift */; };
 		CAB3AEEA2CB4E3D500606F02 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB3AEE92CB4E3D500606F02 /* RegisterController.swift */; };
+		CAFA4BBC2CB635D70070B1CC /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFA4BBB2CB635D70070B1CC /* LoginController.swift */; };
+		CAFA4BBF2CB786B00070B1CC /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFA4BBE2CB786B00070B1CC /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		CAB3AEDF2CB3964200606F02 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		CAB3AEE52CB3A1A000606F02 /* GetStartedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedController.swift; sourceTree = "<group>"; };
 		CAB3AEE92CB4E3D500606F02 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		CAFA4BBB2CB635D70070B1CC /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		CAFA4BBE2CB786B00070B1CC /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,7 @@
 		CAB3AEE12CB3965A00606F02 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				CAFA4BBD2CB786870070B1CC /* Models */,
 				CAB3AEE72CB4E36E00606F02 /* Storyboard */,
 				CAB3AEE82CB4E37F00606F02 /* Controllers */,
 			);
@@ -179,9 +184,18 @@
 			isa = PBXGroup;
 			children = (
 				CAB3AEE52CB3A1A000606F02 /* GetStartedController.swift */,
+				CAFA4BBB2CB635D70070B1CC /* LoginController.swift */,
 				CAB3AEE92CB4E3D500606F02 /* RegisterController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CAFA4BBD2CB786870070B1CC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CAFA4BBE2CB786B00070B1CC /* UserModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +331,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAB3AEEA2CB4E3D500606F02 /* RegisterController.swift in Sources */,
+				CAFA4BBF2CB786B00070B1CC /* UserModel.swift in Sources */,
+				CAFA4BBC2CB635D70070B1CC /* LoginController.swift in Sources */,
 				CAB3AEE62CB3A1A000606F02 /* GetStartedController.swift in Sources */,
 				CAB3AEB42CB3952600606F02 /* MainViewController.swift in Sources */,
 				CAB3AEB02CB3952600606F02 /* AppDelegate.swift in Sources */,
