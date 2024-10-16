@@ -52,11 +52,15 @@ extension AnswerCollectionViewCell: UICollectionViewDelegate,
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AnswerTitleCell", for: indexPath) as! AnswerTitleCell
         guard let answer = question?.answer[indexPath.row] else {return UICollectionViewCell()}
         cell.configureCell(model: answer)
+        cell.backgroundColor = .white
+//        cell.layer.borderColor = UIColor.black.cgColor
+//        cell.layer.borderWidth = 1.0
+        cell.layer.cornerRadius = 25
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return .init(width: collectionView.frame.width/2 - 24, height: collectionView.frame.height/4 - 12)
+        return .init(width: collectionView.frame.width - 10, height: 50)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {

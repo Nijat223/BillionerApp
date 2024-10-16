@@ -9,12 +9,16 @@ import UIKit
 
 class QuestionHeaderView: UICollectionReusableView {
     @IBOutlet private weak var questionLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        backgroundColor = .clear
+        questionLabel.backgroundColor = .clear
+        
     }
     
     func configureView(model: Question) {
         questionLabel.text = model.title
+    
     }
 }

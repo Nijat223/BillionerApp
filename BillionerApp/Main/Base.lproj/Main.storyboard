@@ -32,7 +32,7 @@
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VKM-7z-V87">
                                 <rect key="frame" x="0.0" y="304" width="393" height="548"/>
-                                <color key="backgroundColor" name="Leaderboard"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="548" id="AaM-sj-dfp"/>
                                 </constraints>
@@ -71,8 +71,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="q3z-qB-r6r">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="2EW-8b-gJf">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -85,14 +84,31 @@
                                     <outlet property="delegate" destination="YNv-mt-80l" id="bQy-0c-wG1"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O73-OH-bId">
+                                <rect key="frame" x="24" y="709" width="345" height="48"/>
+                                <color key="backgroundColor" name="btnbgColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="tai-J0-ZP4"/>
+                                </constraints>
+                                <color key="tintColor" name="btnTitleColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="quizColor"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sKc-hs-xf7"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" name="Leaderboard"/>
                         <constraints>
                             <constraint firstItem="sKc-hs-xf7" firstAttribute="trailing" secondItem="q3z-qB-r6r" secondAttribute="trailing" id="06l-tz-khq"/>
-                            <constraint firstItem="q3z-qB-r6r" firstAttribute="top" secondItem="sKc-hs-xf7" secondAttribute="top" id="MrC-Zv-FhY"/>
+                            <constraint firstItem="sKc-hs-xf7" firstAttribute="bottom" secondItem="O73-OH-bId" secondAttribute="bottom" constant="61" id="DsY-2c-LAk"/>
+                            <constraint firstItem="q3z-qB-r6r" firstAttribute="top" secondItem="YNv-mt-80l" secondAttribute="top" id="MrC-Zv-FhY"/>
                             <constraint firstItem="q3z-qB-r6r" firstAttribute="leading" secondItem="sKc-hs-xf7" secondAttribute="leading" id="UzE-dY-amp"/>
-                            <constraint firstItem="sKc-hs-xf7" firstAttribute="bottom" secondItem="q3z-qB-r6r" secondAttribute="bottom" id="tuz-Jr-etv"/>
+                            <constraint firstItem="O73-OH-bId" firstAttribute="leading" secondItem="sKc-hs-xf7" secondAttribute="leading" constant="24" id="ZBK-Xv-APh"/>
+                            <constraint firstItem="sKc-hs-xf7" firstAttribute="trailing" secondItem="O73-OH-bId" secondAttribute="trailing" constant="24" id="fE2-YQ-2zr"/>
+                            <constraint firstAttribute="bottom" secondItem="q3z-qB-r6r" secondAttribute="bottom" id="tuz-Jr-etv"/>
                         </constraints>
                     </view>
                     <connections>
@@ -101,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jhg-cd-QMx" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="106" y="5"/>
+            <point key="canvasLocation" x="104.58015267175573" y="4.9295774647887329"/>
         </scene>
     </scenes>
     <resources>
@@ -109,17 +125,23 @@
         <namedColor name="Leaderboard">
             <color red="0.93725490196078431" green="0.94117647058823528" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="btnTitleColor">
+            <color red="0.99607843137254903" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="btnbgColor">
+            <color red="0.38823529411764707" green="0.36862745098039218" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="quizColor">
             <color red="0.0" green="0.27450980392156865" blue="0.2627450980392157" alpha="0.69999998807907104" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="startColor">
             <color red="0.97254901960784312" green="0.77647058823529413" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

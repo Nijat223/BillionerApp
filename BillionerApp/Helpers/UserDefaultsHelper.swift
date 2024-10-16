@@ -70,8 +70,9 @@ final class UserDefaultsHelper {
     static func getBool(key: String) -> Bool {
         return defaults.bool(forKey: key)
     }
+
     
-    // MARK: Remover
+//    // MARK: Remover
     
     static func remove(key: String) {
         defaults.removeObject(forKey: key)
