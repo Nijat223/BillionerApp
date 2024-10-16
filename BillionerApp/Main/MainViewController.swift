@@ -32,7 +32,7 @@ class MainViewController: UIViewController {
         //TODO: should use Json
         questions = [
             Question(
-                title: "What is the capital of Azerbaijan",
+                title: "What's the capital of Azerbaijan?",
                 answer: [
                     Answer(title: "Gadabay", correct: false),
                     Answer(title: "Ganja", correct: false),
@@ -42,22 +42,22 @@ class MainViewController: UIViewController {
                 ]
             ),
             Question(
-                title: "2+3",
+                title: "What's ur name?",
                 answer: [
-                    Answer(title: "1", correct: false),
-                    Answer(title: "2", correct: false),
-                    Answer(title: "3", correct: false),
-                    Answer(title: "5", correct: true),
+                    Answer(title: "Kanan", correct: false),
+                    Answer(title: "Yusif", correct: false),
+                    Answer(title: "Orxan", correct: false),
+                    Answer(title: "Nijat", correct: true),
                     
                 ]
             ),
             Question(
-                title: "3+3",
+                title: "How old are u?",
                 answer: [
-                    Answer(title: "1", correct: false),
-                    Answer(title: "2", correct: false),
-                    Answer(title: "3", correct: false),
-                    Answer(title: "6", correct: true),
+                    Answer(title: "15", correct: false),
+                    Answer(title: "25", correct: false),
+                    Answer(title: "35", correct: false),
+                    Answer(title: "65", correct: true),
                     
                 ]
             )
