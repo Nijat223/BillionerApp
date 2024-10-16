@@ -1,32 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fbJ-IW-dV5">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Leader Board-->
+        <scene sceneID="ANY-wa-H6Z">
             <objects>
-                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="BillionerApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController storyboardIdentifier="LeaderBoard" id="mBs-rS-QWo" customClass="LeaderBoard" customModule="BillionerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ot1-F0-zHb">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startQuizImage" translatesAutoresizingMaskIntoConstraints="NO" id="UDh-6A-QPa">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="auN-5C-fMb">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" name="quizColor"/>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Leaderboard" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Cx-t5-0eU">
+                                <rect key="frame" x="120" y="79" width="153" height="34"/>
+                                <color key="textColor" name="startColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VKM-7z-V87">
+                                <rect key="frame" x="0.0" y="304" width="393" height="548"/>
+                                <color key="backgroundColor" name="Leaderboard"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="548" id="AaM-sj-dfp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rKZ-zV-WcK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="auN-5C-fMb" firstAttribute="leading" secondItem="rKZ-zV-WcK" secondAttribute="leading" id="2Tq-cn-IY2"/>
+                            <constraint firstItem="rKZ-zV-WcK" firstAttribute="trailing" secondItem="UDh-6A-QPa" secondAttribute="trailing" id="2WS-Ug-q7u"/>
+                            <constraint firstItem="auN-5C-fMb" firstAttribute="top" secondItem="ot1-F0-zHb" secondAttribute="top" id="2rb-Pt-DIP"/>
+                            <constraint firstAttribute="bottom" secondItem="auN-5C-fMb" secondAttribute="bottom" id="Bxs-4e-DbZ"/>
+                            <constraint firstItem="rKZ-zV-WcK" firstAttribute="trailing" secondItem="auN-5C-fMb" secondAttribute="trailing" id="Shc-y7-2g1"/>
+                            <constraint firstAttribute="bottom" secondItem="VKM-7z-V87" secondAttribute="bottom" id="Tca-Dz-1VM"/>
+                            <constraint firstItem="2Cx-t5-0eU" firstAttribute="leading" secondItem="rKZ-zV-WcK" secondAttribute="leading" constant="120" id="ToR-e7-PGh"/>
+                            <constraint firstItem="VKM-7z-V87" firstAttribute="leading" secondItem="rKZ-zV-WcK" secondAttribute="leading" id="WND-cz-SGN"/>
+                            <constraint firstItem="UDh-6A-QPa" firstAttribute="top" secondItem="ot1-F0-zHb" secondAttribute="top" id="Yrn-8K-QaJ"/>
+                            <constraint firstItem="VKM-7z-V87" firstAttribute="trailing" secondItem="rKZ-zV-WcK" secondAttribute="trailing" id="hb8-fV-YAC"/>
+                            <constraint firstItem="UDh-6A-QPa" firstAttribute="leading" secondItem="rKZ-zV-WcK" secondAttribute="leading" id="j3y-7d-tZf"/>
+                            <constraint firstItem="rKZ-zV-WcK" firstAttribute="trailing" secondItem="2Cx-t5-0eU" secondAttribute="trailing" constant="120" id="lkf-JL-iKK"/>
+                            <constraint firstItem="2Cx-t5-0eU" firstAttribute="top" secondItem="rKZ-zV-WcK" secondAttribute="top" constant="20" id="ozO-Vx-mmU"/>
+                            <constraint firstAttribute="bottom" secondItem="UDh-6A-QPa" secondAttribute="bottom" id="tCw-E1-Oeb"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gwe-1d-O3a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="88" y="4"/>
+            <point key="canvasLocation" x="783.96946564885491" y="3.5211267605633805"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="Qmv-t3-eUl">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fbJ-IW-dV5" customClass="MainViewController" customModule="BillionerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YNv-mt-80l">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="q3z-qB-r6r">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="2EW-8b-gJf">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="YNv-mt-80l" id="n0m-tP-87u"/>
+                                    <outlet property="delegate" destination="YNv-mt-80l" id="bQy-0c-wG1"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sKc-hs-xf7"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="sKc-hs-xf7" firstAttribute="trailing" secondItem="q3z-qB-r6r" secondAttribute="trailing" id="06l-tz-khq"/>
+                            <constraint firstItem="q3z-qB-r6r" firstAttribute="top" secondItem="sKc-hs-xf7" secondAttribute="top" id="MrC-Zv-FhY"/>
+                            <constraint firstItem="q3z-qB-r6r" firstAttribute="leading" secondItem="sKc-hs-xf7" secondAttribute="leading" id="UzE-dY-amp"/>
+                            <constraint firstItem="sKc-hs-xf7" firstAttribute="bottom" secondItem="q3z-qB-r6r" secondAttribute="bottom" id="tuz-Jr-etv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collection" destination="q3z-qB-r6r" id="9kV-l1-uFN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jhg-cd-QMx" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="106" y="5"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemCyanColor">
-            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="startQuizImage" width="3000" height="2000"/>
+        <namedColor name="Leaderboard">
+            <color red="0.93725490196078431" green="0.94117647058823528" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="quizColor">
+            <color red="0.0" green="0.27450980392156865" blue="0.2627450980392157" alpha="0.69999998807907104" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="startColor">
+            <color red="0.97254901960784312" green="0.77647058823529413" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

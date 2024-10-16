@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA86FD0F2CBF71480076643E /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA86FD0E2CBF71480076643E /* UserDefaultsHelper.swift */; };
+		CA86FD112CBF71600076643E /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA86FD102CBF71600076643E /* UserDefaultsKey.swift */; };
 		CAB3AEB02CB3952600606F02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB3AEAF2CB3952600606F02 /* AppDelegate.swift */; };
 		CAB3AEB22CB3952600606F02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB3AEB12CB3952600606F02 /* SceneDelegate.swift */; };
 		CAB3AEB42CB3952600606F02 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB3AEB32CB3952600606F02 /* MainViewController.swift */; };
@@ -21,6 +23,13 @@
 		CAB3AEEA2CB4E3D500606F02 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB3AEE92CB4E3D500606F02 /* RegisterController.swift */; };
 		CAFA4BBC2CB635D70070B1CC /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFA4BBB2CB635D70070B1CC /* LoginController.swift */; };
 		CAFA4BBF2CB786B00070B1CC /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFA4BBE2CB786B00070B1CC /* UserModel.swift */; };
+		CAFA4BC62CB987760070B1CC /* AnswerTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFA4BC42CB987760070B1CC /* AnswerTitleCell.swift */; };
+		CAFA4BC72CB987760070B1CC /* AnswerTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAFA4BC52CB987760070B1CC /* AnswerTitleCell.xib */; };
+		CAFA4BCA2CB988600070B1CC /* AnswerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFA4BC82CB988600070B1CC /* AnswerCollectionViewCell.swift */; };
+		CAFA4BCB2CB988600070B1CC /* AnswerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAFA4BC92CB988600070B1CC /* AnswerCollectionViewCell.xib */; };
+		CAFA4BCE2CB98F800070B1CC /* QuestionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFA4BCC2CB98F800070B1CC /* QuestionHeaderView.swift */; };
+		CAFA4BCF2CB98F800070B1CC /* QuestionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAFA4BCD2CB98F800070B1CC /* QuestionHeaderView.xib */; };
+		CAFA4BD12CBA6B580070B1CC /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFA4BD02CBA6B580070B1CC /* QuestionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA86FD0E2CBF71480076643E /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		CA86FD102CBF71600076643E /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
 		CAB3AEAC2CB3952600606F02 /* BillionerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillionerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB3AEAF2CB3952600606F02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAB3AEB12CB3952600606F02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +70,13 @@
 		CAB3AEE92CB4E3D500606F02 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		CAFA4BBB2CB635D70070B1CC /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		CAFA4BBE2CB786B00070B1CC /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		CAFA4BC42CB987760070B1CC /* AnswerTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTitleCell.swift; sourceTree = "<group>"; };
+		CAFA4BC52CB987760070B1CC /* AnswerTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnswerTitleCell.xib; sourceTree = "<group>"; };
+		CAFA4BC82CB988600070B1CC /* AnswerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCollectionViewCell.swift; sourceTree = "<group>"; };
+		CAFA4BC92CB988600070B1CC /* AnswerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnswerCollectionViewCell.xib; sourceTree = "<group>"; };
+		CAFA4BCC2CB98F800070B1CC /* QuestionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionHeaderView.swift; sourceTree = "<group>"; };
+		CAFA4BCD2CB98F800070B1CC /* QuestionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionHeaderView.xib; sourceTree = "<group>"; };
+		CAFA4BD02CBA6B580070B1CC /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +104,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA86FD0D2CBF711C0076643E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CA86FD0E2CBF71480076643E /* UserDefaultsHelper.swift */,
+				CA86FD102CBF71600076643E /* UserDefaultsKey.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		CAB3AEA32CB3952600606F02 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +136,7 @@
 		CAB3AEAE2CB3952600606F02 /* BillionerApp */ = {
 			isa = PBXGroup;
 			children = (
+				CA86FD0D2CBF711C0076643E /* Helpers */,
 				CAB3AEBD2CB3952700606F02 /* Info.plist */,
 				CAB3AEE32CB3968200606F02 /* App */,
 				CAB3AEE22CB3966400606F02 /* Main */,
@@ -148,8 +176,10 @@
 		CAB3AEE22CB3966400606F02 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				CAFA4BC02CB84E3B0070B1CC /* Views */,
 				CAB3AEB32CB3952600606F02 /* MainViewController.swift */,
 				CAB3AEB52CB3952600606F02 /* Main.storyboard */,
+				CAFA4BD02CBA6B580070B1CC /* QuestionModel.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -196,6 +226,43 @@
 				CAFA4BBE2CB786B00070B1CC /* UserModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CAFA4BC02CB84E3B0070B1CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CAFA4BC12CB84E540070B1CC /* AnswerTitleCell */,
+				CAFA4BC22CB84EDD0070B1CC /* AnswerCollectionViewCell */,
+				CAFA4BC32CB84EFC0070B1CC /* CollectionHeaderView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CAFA4BC12CB84E540070B1CC /* AnswerTitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				CAFA4BC42CB987760070B1CC /* AnswerTitleCell.swift */,
+				CAFA4BC52CB987760070B1CC /* AnswerTitleCell.xib */,
+			);
+			path = AnswerTitleCell;
+			sourceTree = "<group>";
+		};
+		CAFA4BC22CB84EDD0070B1CC /* AnswerCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CAFA4BC82CB988600070B1CC /* AnswerCollectionViewCell.swift */,
+				CAFA4BC92CB988600070B1CC /* AnswerCollectionViewCell.xib */,
+			);
+			path = AnswerCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		CAFA4BC32CB84EFC0070B1CC /* CollectionHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				CAFA4BCC2CB98F800070B1CC /* QuestionHeaderView.swift */,
+				CAFA4BCD2CB98F800070B1CC /* QuestionHeaderView.xib */,
+			);
+			path = CollectionHeaderView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +369,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAFA4BCB2CB988600070B1CC /* AnswerCollectionViewCell.xib in Resources */,
+				CAFA4BC72CB987760070B1CC /* AnswerTitleCell.xib in Resources */,
+				CAFA4BCF2CB98F800070B1CC /* QuestionHeaderView.xib in Resources */,
 				CAB3AEE02CB3964200606F02 /* Auth.storyboard in Resources */,
 				CAB3AEB92CB3952700606F02 /* Assets.xcassets in Resources */,
 				CAB3AEBC2CB3952700606F02 /* Base in Resources */,
@@ -331,8 +401,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAB3AEEA2CB4E3D500606F02 /* RegisterController.swift in Sources */,
+				CAFA4BCE2CB98F800070B1CC /* QuestionHeaderView.swift in Sources */,
+				CA86FD112CBF71600076643E /* UserDefaultsKey.swift in Sources */,
+				CAFA4BD12CBA6B580070B1CC /* QuestionModel.swift in Sources */,
 				CAFA4BBF2CB786B00070B1CC /* UserModel.swift in Sources */,
+				CAFA4BC62CB987760070B1CC /* AnswerTitleCell.swift in Sources */,
 				CAFA4BBC2CB635D70070B1CC /* LoginController.swift in Sources */,
+				CA86FD0F2CBF71480076643E /* UserDefaultsHelper.swift in Sources */,
+				CAFA4BCA2CB988600070B1CC /* AnswerCollectionViewCell.swift in Sources */,
 				CAB3AEE62CB3A1A000606F02 /* GetStartedController.swift in Sources */,
 				CAB3AEB42CB3952600606F02 /* MainViewController.swift in Sources */,
 				CAB3AEB02CB3952600606F02 /* AppDelegate.swift in Sources */,
