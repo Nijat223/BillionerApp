@@ -9,6 +9,7 @@ import UIKit
 
 class MainViewController: UIViewController {
     @IBOutlet private weak var collection: UICollectionView!
+    private var result:[Answer] = []
     private var questions: [Question] = []
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,6 +72,14 @@ class MainViewController: UIViewController {
             self?.collection.reloadData()
         }
     }
+    
+    fileprivate func checkAnswer(answer: Answer) {
+            result.append(answer)
+    //        if answer.correct {
+    //            result = result + 1
+    //        }
+            print(#function, result.filter({$0.correct}).count)
+        }
 
 }
 
@@ -89,6 +98,9 @@ extension MainViewController: UICollectionViewDelegate,
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AnswerCollectionViewCell", for: indexPath) as! AnswerCollectionViewCell
         let model = questions[indexPath.row]
         cell.configureCell(model: model)
+        cell.callback = { [weak self] answer in
+                    self?.checkAnswer(answer: answer)
+                }
         return cell
     }
     

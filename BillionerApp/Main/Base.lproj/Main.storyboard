@@ -96,10 +96,13 @@
                                 </constraints>
                                 <color key="tintColor" name="btnTitleColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next">
+                                <buttonConfiguration key="configuration" style="plain">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" name="quizColor"/>
                                     </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Next"/>
+                                    </attributedString>
                                 </buttonConfiguration>
                             </button>
                         </subviews>

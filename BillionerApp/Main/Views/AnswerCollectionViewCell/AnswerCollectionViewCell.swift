@@ -9,7 +9,7 @@ import UIKit
 
 class AnswerCollectionViewCell: UICollectionViewCell {
     @IBOutlet private weak var collection: UICollectionView!
-    
+    var callback:( (Answer) -> Void )?
     private var question: Question?
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -34,6 +34,13 @@ class AnswerCollectionViewCell: UICollectionViewCell {
             self?.collection.reloadData()
         }
     }
+    
+    fileprivate func setColor(index: Int) {
+            guard let answer = question?.answer[index] else {return}
+            question?.answer[index].color = answer.correct ? .green : .red
+            reloadCollection()
+        }
+
     
     
 }
@@ -85,6 +92,8 @@ extension AnswerCollectionViewCell: UICollectionViewDelegate,
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let answer = question?.answer[indexPath.row] else {return}
+        setColor(index: indexPath.row)
+                callback?(answer)
         print(#function, answer, indexPath.row)
     }
 }
