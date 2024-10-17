@@ -13,8 +13,7 @@ class QuestionHeaderView: UICollectionReusableView {
     override func awakeFromNib() {
         super.awakeFromNib()
         backgroundColor = .clear
-        questionLabel.backgroundColor = .clear
-        
+        questionLabel.layer.cornerRadius = 25
     }
     
     func configureView(model: Question) {

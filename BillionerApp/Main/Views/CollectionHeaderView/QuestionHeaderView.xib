@@ -11,21 +11,21 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="QuestionHeaderView" id="U6b-Vx-4bR" customClass="QuestionHeaderView" customModule="BillionerApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="365" height="248"/>
+            <rect key="frame" x="0.0" y="0.0" width="617" height="409"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M4b-sC-lhh">
-                    <rect key="frame" x="0.0" y="0.0" width="365" height="248"/>
+                    <rect key="frame" x="0.0" y="0.0" width="617" height="409"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6W-Ae-oma" userLabel="Question Label">
-                            <rect key="frame" x="20" y="50" width="325" height="148"/>
-                            <color key="backgroundColor" name="Leaderboard"/>
+                            <rect key="frame" x="20" y="50" width="577" height="309"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" name="Leaderboard"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="d6W-Ae-oma" firstAttribute="leading" secondItem="M4b-sC-lhh" secondAttribute="leading" constant="20" id="0RF-2s-QX7"/>
@@ -45,7 +45,7 @@
             <connections>
                 <outlet property="questionLabel" destination="d6W-Ae-oma" id="x2o-G2-adA"/>
             </connections>
-            <point key="canvasLocation" x="100" y="89.436619718309871"/>
+            <point key="canvasLocation" x="292.36641221374043" y="146.12676056338029"/>
         </collectionReusableView>
     </objects>
     <resources>
