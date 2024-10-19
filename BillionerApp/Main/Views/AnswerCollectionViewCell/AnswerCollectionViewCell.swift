@@ -11,7 +11,7 @@ class AnswerCollectionViewCell: UICollectionViewCell {
     @IBOutlet private weak var collection: UICollectionView!
     var callback:( (Answer) -> Void )?
     private var question: Question?
-    var checkAnswer: Answer?
+    var checkAnswer = true
     override func awakeFromNib() {
         super.awakeFromNib()
         configureCollection()
@@ -95,8 +95,13 @@ extension AnswerCollectionViewCell: UICollectionViewDelegate,
         guard let answer = question?.answer[indexPath.row] else {return}
         //setColor(index: indexPath.row)
         let cell = collection.cellForItem(at: indexPath) as! AnswerTitleCell
+        
+        if checkAnswer {
+            
             cell.answerLabel.backgroundColor = answer.correct ? .green : .red
-        //reloadCollection()
+            //reloadCollection()
+             checkAnswer = false
+        }
         callback?(answer)
         print(#function, answer, indexPath.row)
     }
