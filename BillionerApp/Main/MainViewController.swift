@@ -9,6 +9,8 @@ import UIKit
 
 class MainViewController: UIViewController {
     @IBOutlet private weak var collection: UICollectionView!
+    @IBOutlet private weak var nextQuestionButton: UIButton!
+    var currentQuestionIndex = 0
     private var result:[Answer] = []
     private var questions: [Question] = []
     override func viewDidLoad() {
@@ -26,6 +28,7 @@ class MainViewController: UIViewController {
     fileprivate func configureCollection() {
         collection.delegate = self
         collection.dataSource = self
+        collection.isScrollEnabled = false
         collection.register(UINib(nibName: "AnswerCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "AnswerCollectionViewCell")
     }
     
@@ -104,7 +107,33 @@ extension MainViewController: UICollectionViewDelegate,
         return cell
     }
     
+    @IBAction func nextQuestionButtonTapped(_ sender: UIButton) {
+        
+        let indexPath = IndexPath(row: 0, section: 0) // Cavabın olduğu hüceyrənin indeks yolu
+        if let cell = collection.cellForItem(at: indexPath) as? AnswerTitleCell {
+            let answer = cell.answerLabel.text
+            //            print(answer)
+            
+        }
+        currentQuestionIndex += 1
+        
+        if currentQuestionIndex < questions.count {
+            let indexPath = IndexPath(item: currentQuestionIndex, section: 0)
+            collection.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+            if currentQuestionIndex == questions.count-1{
+                nextQuestionButton.setTitle("Submit", for:.normal)
+                
+                
+            }
+        } else {
+            let nextVC = storyboard?.instantiateViewController(withIdentifier: "Leaderboard") as! Leaderboard
+            navigationController?.pushViewController(nextVC, animated: true)
+        }
+    }
+
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return .init(width: collectionView.frame.width, height: collectionView.frame.height)
     }
+    
 }

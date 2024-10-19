@@ -11,6 +11,7 @@ class AnswerCollectionViewCell: UICollectionViewCell {
     @IBOutlet private weak var collection: UICollectionView!
     var callback:( (Answer) -> Void )?
     private var question: Question?
+    var checkAnswer: Answer?
     override func awakeFromNib() {
         super.awakeFromNib()
         configureCollection()
@@ -62,7 +63,7 @@ extension AnswerCollectionViewCell: UICollectionViewDelegate,
         cell.backgroundColor = .white
 //        cell.layer.borderColor = UIColor.black.cgColor
 //        cell.layer.borderWidth = 1.0
-        cell.layer.cornerRadius = 25
+        cell.layer.cornerRadius = 20
         return cell
     }
     
@@ -92,10 +93,14 @@ extension AnswerCollectionViewCell: UICollectionViewDelegate,
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let answer = question?.answer[indexPath.row] else {return}
-        setColor(index: indexPath.row)
-                callback?(answer)
+        //setColor(index: indexPath.row)
+        let cell = collection.cellForItem(at: indexPath) as! AnswerTitleCell
+            cell.answerLabel.backgroundColor = answer.correct ? .green : .red
+        //reloadCollection()
+        callback?(answer)
         print(#function, answer, indexPath.row)
     }
+    
 }
 
 

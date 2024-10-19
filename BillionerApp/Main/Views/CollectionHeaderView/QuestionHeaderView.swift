@@ -14,6 +14,8 @@ class QuestionHeaderView: UICollectionReusableView {
         super.awakeFromNib()
         backgroundColor = .clear
         questionLabel.layer.cornerRadius = 25
+        questionLabel.backgroundColor = .clear
+        questionLabel.layer.backgroundColor = UIColor.white.cgColor
     }
     
     func configureView(model: Question) {
