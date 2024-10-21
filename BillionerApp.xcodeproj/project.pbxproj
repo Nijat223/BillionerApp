@@ -10,6 +10,7 @@
 		CA86FD0F2CBF71480076643E /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA86FD0E2CBF71480076643E /* UserDefaultsHelper.swift */; };
 		CA86FD112CBF71600076643E /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA86FD102CBF71600076643E /* UserDefaultsKey.swift */; };
 		CA86FD132CC2C4230076643E /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA86FD122CC2C4230076643E /* Leaderboard.swift */; };
+		CA86FD152CC5487D0076643E /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA86FD142CC5487D0076643E /* ProfileController.swift */; };
 		CAB3AEB02CB3952600606F02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB3AEAF2CB3952600606F02 /* AppDelegate.swift */; };
 		CAB3AEB22CB3952600606F02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB3AEB12CB3952600606F02 /* SceneDelegate.swift */; };
 		CAB3AEB42CB3952600606F02 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB3AEB32CB3952600606F02 /* MainViewController.swift */; };
@@ -54,6 +55,7 @@
 		CA86FD0E2CBF71480076643E /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 		CA86FD102CBF71600076643E /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
 		CA86FD122CC2C4230076643E /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
+		CA86FD142CC5487D0076643E /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		CAB3AEAC2CB3952600606F02 /* BillionerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillionerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB3AEAF2CB3952600606F02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAB3AEB12CB3952600606F02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				CA86FD122CC2C4230076643E /* Leaderboard.swift */,
 				CAB3AEB52CB3952600606F02 /* Main.storyboard */,
 				CAFA4BD02CBA6B580070B1CC /* QuestionModel.swift */,
+				CA86FD142CC5487D0076643E /* ProfileController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 				CA86FD112CBF71600076643E /* UserDefaultsKey.swift in Sources */,
 				CA86FD132CC2C4230076643E /* Leaderboard.swift in Sources */,
 				CAFA4BD12CBA6B580070B1CC /* QuestionModel.swift in Sources */,
+				CA86FD152CC5487D0076643E /* ProfileController.swift in Sources */,
 				CAFA4BBF2CB786B00070B1CC /* UserModel.swift in Sources */,
 				CAFA4BC62CB987760070B1CC /* AnswerTitleCell.swift in Sources */,
 				CAFA4BBC2CB635D70070B1CC /* LoginController.swift in Sources */,

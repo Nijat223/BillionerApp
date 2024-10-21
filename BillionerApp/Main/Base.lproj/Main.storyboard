@@ -128,17 +128,57 @@
             </objects>
             <point key="canvasLocation" x="1104.5801526717557" y="-651.4084507042254"/>
         </scene>
-        <!--Item 1-->
+        <!--Profile-->
         <scene sceneID="Vrh-1C-k1t">
             <objects>
-                <viewController id="Qph-dq-m1k" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qph-dq-m1k" customClass="ProfileController" customModule="BillionerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dn9-F9-oJc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="ltm-rl-YMB">
+                                <rect key="frame" x="16" y="99" width="361" height="184"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPk-kb-AwU">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjM-kg-i0S">
+                                        <rect key="frame" x="0.0" y="74" width="361" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAB-jp-25J">
+                                        <rect key="frame" x="0.0" y="148" width="361" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idv-39-obK">
+                                <rect key="frame" x="153.66666666666666" y="343" width="86" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fwA-SX-OvB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title=" Log out"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ssm-kP-s3D"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ssm-kP-s3D" firstAttribute="trailing" secondItem="ltm-rl-YMB" secondAttribute="trailing" constant="16" id="AfM-fJ-vDh"/>
+                            <constraint firstItem="idv-39-obK" firstAttribute="top" secondItem="ltm-rl-YMB" secondAttribute="bottom" constant="60" id="HcP-5H-DNM"/>
+                            <constraint firstItem="ltm-rl-YMB" firstAttribute="top" secondItem="ssm-kP-s3D" secondAttribute="top" constant="40" id="bqU-xr-JqG"/>
+                            <constraint firstItem="ltm-rl-YMB" firstAttribute="leading" secondItem="ssm-kP-s3D" secondAttribute="leading" constant="16" id="e8q-9f-Feb"/>
+                            <constraint firstItem="idv-39-obK" firstAttribute="centerX" secondItem="dn9-F9-oJc" secondAttribute="centerX" id="oTH-XS-mGd"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="rQE-b0-79r"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="rQE-b0-79r"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7eR-PV-xDz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -162,11 +202,11 @@
             </objects>
             <point key="canvasLocation" x="-683" y="-225"/>
         </scene>
-        <!--Item-->
+        <!--Quiz-->
         <scene sceneID="38i-vS-XPr">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HU1-Me-xnI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="S1V-zy-MVS"/>
+                    <tabBarItem key="tabBarItem" title="Quiz" image="homekit" catalog="system" id="S1V-zy-MVS"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GW1-4w-2VL">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -183,6 +223,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="homekit" catalog="system" width="128" height="104"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="startQuizImage" width="3000" height="2000"/>
         <namedColor name="Leaderboard">
             <color red="0.93725490196078431" green="0.94117647058823528" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

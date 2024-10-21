@@ -49,11 +49,22 @@ final class RegisterController: UIViewController {
               let mail = mailField.text else {return}
         
         user = User(name: name, surname: surname, email: mail, password: password)
+        
+        saveUserToDefault(user: user)
+        
         guard let user = user else {return}
         delegate?.didFinish(user: user)
         navigationController?.popViewController(animated: true)
         
     }
+    
+    fileprivate func saveUserToDefault(user: User?){
+        UserDefaults.standard.setValue(user?.name, forKey: "name")
+        UserDefaults.standard.setValue(user?.surname, forKey: "surname")
+        UserDefaults.standard.setValue(user?.email, forKey: "email")
+         
+    }
+    
     fileprivate func checkValidation() -> Bool {
         guard let name = nameField.text,
               let surname = surnameField.text,
