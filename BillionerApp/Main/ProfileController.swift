@@ -12,11 +12,11 @@ class ProfileController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var surnameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-     setupUI()
+        
+        setupUI()
         
     }
     
@@ -31,9 +31,14 @@ class ProfileController: UIViewController {
     }
     
     @IBAction func logOutButtonClicked(_ sender: Any){
+        if let scene = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate {
+            scene.switchToLogin()
+        }
+        UserDefaults.standard.removeObject(forKey: "name")
+        UserDefaults.standard.removeObject(forKey: "surname")
+        UserDefaults.standard.removeObject(forKey: "email")
+        UserDefaults.standard.synchronize()
         
     }
-
-
-
+    
 }
