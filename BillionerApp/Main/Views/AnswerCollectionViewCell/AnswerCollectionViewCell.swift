@@ -108,10 +108,3 @@ extension AnswerCollectionViewCell: UICollectionViewDelegate,
     
 }
 
-//extension AnswerCollectionViewCell: AddBookDelegate {
-//    func didAddBook(_ book: listModel) {
-//        Answer.append(Answer)
-//        
-//    }
-//}
-

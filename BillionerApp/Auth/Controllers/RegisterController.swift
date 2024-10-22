@@ -55,6 +55,8 @@ final class RegisterController: UIViewController {
         guard let user = user else {return}
         delegate?.didFinish(user: user)
         navigationController?.popViewController(animated: true)
+        UserDefaults.standard.setValue(user.name, forKey: "Name")
+
         
     }
     
@@ -65,6 +67,7 @@ final class RegisterController: UIViewController {
          
     }
     
+
     fileprivate func checkValidation() -> Bool {
         guard let name = nameField.text,
               let surname = surnameField.text,

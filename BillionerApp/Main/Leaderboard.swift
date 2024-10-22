@@ -9,21 +9,32 @@ import UIKit
 
 class Leaderboard: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+    @IBOutlet weak var leaderView: UIView!
+    @IBOutlet weak var leaderScore: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            leaderViewCheck()
+            setResult()
+           
+        }
+        
+        func leaderViewCheck(){
+            leaderView.layer.cornerRadius = 10
+            
+        }
+        
+        func setResult() {
+            let name = UserDefaults.standard.string(forKey: "Name")
+//            let leader = UserDefaults.standard.string(forKey: "Leader")
 
-    /*
-    // MARK: - Navigation
+            
+            nameLabel.text = name
+//            leaderScore.text = leader
+            
+        }
+        
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
-
-}

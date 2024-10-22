@@ -10,6 +10,7 @@ import UIKit
 class MainViewController: UIViewController {
     @IBOutlet private weak var collection: UICollectionView!
     @IBOutlet private weak var nextQuestionButton: UIButton!
+    var books = [listModel]()
     var currentQuestionIndex = 0
     private var result:[Answer] = []
     private var questions: [Question] = []
@@ -89,7 +90,7 @@ class MainViewController: UIViewController {
 extension MainViewController: UICollectionViewDelegate,
                               UICollectionViewDataSource,
                               UICollectionViewDelegateFlowLayout {
-
+    
     func collectionView(
         _ collectionView: UICollectionView,
         numberOfItemsInSection section: Int
@@ -102,8 +103,8 @@ extension MainViewController: UICollectionViewDelegate,
         let model = questions[indexPath.row]
         cell.configureCell(model: model)
         cell.callback = { [weak self] answer in
-                    self?.checkAnswer(answer: answer)
-                }
+            self?.checkAnswer(answer: answer)
+        }
         return cell
     }
     
@@ -125,15 +126,19 @@ extension MainViewController: UICollectionViewDelegate,
                 
                 
             }
-        } else {
+            
+        }
+        
+        else {
             let nextVC = storyboard?.instantiateViewController(withIdentifier: "Leaderboard") as! Leaderboard
             navigationController?.pushViewController(nextVC, animated: true)
         }
+        
+       
+        
+        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+            return .init(width: collectionView.frame.width, height: collectionView.frame.height)
+        }
+        
     }
-
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return .init(width: collectionView.frame.width, height: collectionView.frame.height)
-    }
-    
 }
