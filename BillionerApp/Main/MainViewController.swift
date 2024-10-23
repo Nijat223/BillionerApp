@@ -133,7 +133,7 @@ extension MainViewController: UICollectionViewDelegate,
             let nextVC = storyboard?.instantiateViewController(withIdentifier: "Leaderboard") as! Leaderboard
             navigationController?.pushViewController(nextVC, animated: true)
         }
-        
+    }
        
         
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -141,4 +141,3 @@ extension MainViewController: UICollectionViewDelegate,
         }
         
     }
-}
