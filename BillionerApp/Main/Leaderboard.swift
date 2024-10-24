@@ -28,11 +28,11 @@ class Leaderboard: UIViewController {
         
         func setResult() {
             let name = UserDefaults.standard.string(forKey: "Name")
-//            let leader = UserDefaults.standard.string(forKey: "Leader")
+            let scores = UserDefaults.standard.string(forKey: "scores")
 
             
             nameLabel.text = name
-//            leaderScore.text = leader
+            leaderScore.text = scores
             
         }
         

@@ -11,6 +11,7 @@ class MainViewController: UIViewController {
     @IBOutlet private weak var collection: UICollectionView!
     @IBOutlet private weak var nextQuestionButton: UIButton!
     var books = [listModel]()
+    var scores = 0
     var currentQuestionIndex = 0
     private var result:[Answer] = []
     private var questions: [Question] = []
@@ -83,6 +84,7 @@ class MainViewController: UIViewController {
     //            result = result + 1
     //        }
             print(#function, result.filter({$0.correct}).count)
+        scores = result.filter({$0.correct}).count
         }
 
 }
@@ -130,6 +132,9 @@ extension MainViewController: UICollectionViewDelegate,
         }
         
         else {
+            
+            UserDefaults.standard.setValue(scores, forKey: "scores")
+            
             let nextVC = storyboard?.instantiateViewController(withIdentifier: "Leaderboard") as! Leaderboard
             navigationController?.pushViewController(nextVC, animated: true)
         }
