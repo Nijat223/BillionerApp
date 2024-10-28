@@ -66,6 +66,56 @@ class MainViewController: UIViewController {
                     Answer(title: "65", correct: true),
                     
                 ]
+            ),
+            Question(
+                title: "2+2?",
+                answer: [
+                    Answer(title: "4", correct: true),
+                    Answer(title: "5", correct: false),
+                    Answer(title: "6", correct: false),
+                    Answer(title: "7", correct: false),
+                    
+                ]
+            ),
+            Question(
+                title: "2+3?",
+                answer: [
+                    Answer(title: "7", correct: false),
+                    Answer(title: "9", correct: false),
+                    Answer(title: "10", correct: false),
+                    Answer(title: "5", correct: true),
+                    
+                ]
+            ),
+            Question(
+                title: "2+4?",
+                answer: [
+                    Answer(title: "1", correct: false),
+                    Answer(title: "5", correct: false),
+                    Answer(title: "3", correct: false),
+                    Answer(title: "6", correct: true),
+                    
+                ]
+            ),
+            Question(
+                title: "2+5?",
+                answer: [
+                    Answer(title: "9", correct: false),
+                    Answer(title: "4", correct: false),
+                    Answer(title: "3", correct: false),
+                    Answer(title: "7", correct: true),
+                    
+                ]
+            ),
+            Question(
+                title: "2+6?",
+                answer: [
+                    Answer(title: "15", correct: false),
+                    Answer(title: "25", correct: false),
+                    Answer(title: "358", correct: false),
+                    Answer(title: "8", correct: true),
+                    
+                ]
             )
         ]
         
@@ -125,7 +175,6 @@ extension MainViewController: UICollectionViewDelegate,
             collection.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
             if currentQuestionIndex == questions.count-1{
                 nextQuestionButton.setTitle("Submit", for:.normal)
-                
                 
             }
             

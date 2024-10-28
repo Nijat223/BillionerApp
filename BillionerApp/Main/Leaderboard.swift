@@ -9,6 +9,7 @@ import UIKit
 
 class Leaderboard: UIViewController {
 
+    @IBOutlet weak var quitLabel: UIButton!
     @IBOutlet weak var leaderView: UIView!
     @IBOutlet weak var leaderScore: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
@@ -20,6 +21,12 @@ class Leaderboard: UIViewController {
             setResult()
            
         }
+    
+    @IBAction func quitButton(_ sender: Any) {
+        if let scene = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate{
+            scene.switchToMain()
+        }
+    }
         
         func leaderViewCheck(){
             leaderView.layer.cornerRadius = 10

@@ -60,12 +60,32 @@
                                             <constraint firstAttribute="height" constant="30" id="oiZ-X3-6RN"/>
                                         </constraints>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQr-Pz-zce">
+                                        <rect key="frame" x="24" y="360" width="345" height="48"/>
+                                        <color key="backgroundColor" name="btnbgColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="qom-vB-tco"/>
+                                        </constraints>
+                                        <color key="tintColor" name="btnTitleColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Quit">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" name="quizColor"/>
+                                            </backgroundConfiguration>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="quitButton:" destination="mBs-rS-QWo" eventType="touchUpInside" id="Elg-9p-Ml1"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="lg4-Hd-qfE" firstAttribute="leading" secondItem="VKM-7z-V87" secondAttribute="leading" constant="24" id="AZx-it-r9X"/>
                                     <constraint firstAttribute="height" constant="548" id="AaM-sj-dfp"/>
+                                    <constraint firstItem="SQr-Pz-zce" firstAttribute="leading" secondItem="VKM-7z-V87" secondAttribute="leading" constant="24" id="C7Z-qM-uU7"/>
                                     <constraint firstAttribute="trailing" secondItem="lg4-Hd-qfE" secondAttribute="trailing" constant="24" id="Jnb-4m-51k"/>
+                                    <constraint firstAttribute="bottom" secondItem="SQr-Pz-zce" secondAttribute="bottom" constant="140" id="PgN-LT-npm"/>
+                                    <constraint firstAttribute="trailing" secondItem="SQr-Pz-zce" secondAttribute="trailing" constant="24" id="TVY-NY-HVs"/>
                                     <constraint firstItem="lg4-Hd-qfE" firstAttribute="top" secondItem="VKM-7z-V87" secondAttribute="top" constant="12" id="g0g-Bq-PqV"/>
                                 </constraints>
                             </view>
@@ -90,6 +110,7 @@
                         <outlet property="leaderScore" destination="nUs-7Q-kfu" id="c6O-hg-ibh"/>
                         <outlet property="leaderView" destination="VKM-7z-V87" id="qwy-Ov-2Ct"/>
                         <outlet property="nameLabel" destination="Nqt-tG-nXf" id="oh8-3k-x2N"/>
+                        <outlet property="quitLabel" destination="SQr-Pz-zce" id="Cyu-Mw-qD4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gwe-1d-O3a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -12,6 +12,7 @@ class AnswerCollectionViewCell: UICollectionViewCell {
     var callback:( (Answer) -> Void )?
     private var question: Question?
     var checkAnswer = true
+    var singleTouch = false
     override func awakeFromNib() {
         super.awakeFromNib()
         configureCollection()
@@ -27,6 +28,8 @@ class AnswerCollectionViewCell: UICollectionViewCell {
     
     func configureCell(model: Question) {
         question = model
+        singleTouch = false
+        checkAnswer = true
         reloadCollection()
     }
     
@@ -92,13 +95,16 @@ extension AnswerCollectionViewCell: UICollectionViewDelegate,
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard !singleTouch else {return}
+        
+        singleTouch = true
         guard let answer = question?.answer[indexPath.row] else {return}
         //setColor(index: indexPath.row)
         let cell = collection.cellForItem(at: indexPath) as! AnswerTitleCell
         
         if checkAnswer {
             
-            cell.answerLabel.backgroundColor = answer.correct ? .green : .red
+            cell.backgroundColor = answer.correct ? .green : .red
             //reloadCollection()
              checkAnswer = false
         }
